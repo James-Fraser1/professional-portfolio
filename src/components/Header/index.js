@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import React from 'react';
 
-function Header() {
+function Header( {setSection} ) {
   return (
     <>
       <Navbar bg="dark" variant="dark" className='header'>
@@ -13,9 +13,9 @@ function Header() {
               <img src={navicon} alt='nav-icon' width={300} height={90}></img>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link onClick={() => setSection("about")}>About</Nav.Link>
+            <Nav.Link onClick={() => setSection("contact")}>Contact</Nav.Link>
+            <Nav.Link onClick={() => setSection("projects")}>Projects</Nav.Link>
             <Nav.Link href="#resume">Resume</Nav.Link>
           </Nav>
         </Container>

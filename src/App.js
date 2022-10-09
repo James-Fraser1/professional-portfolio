@@ -1,20 +1,19 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
-// import Main from './components/Main';
-// import Footer from './components/Footer';
-// import Contact from './pages/Contact';
-// import About from './pages/About';
-// import Projects from './pages/Projects';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './components/Main';
 import Footer from './components/Footer';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [section, setSection] = useState('about');
+
   return (
     <div>
-      <Header></Header>
+      <Header setPage={setSection}></Header>
+      <Main page={section}/>
       <Footer></Footer>
     </div>
+
   );
 }
 

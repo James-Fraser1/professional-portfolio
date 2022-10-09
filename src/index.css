@@ -294,14 +294,10 @@ a {
   color: var(--secondary);
 }
 
-.header {
-  top: 0;
-  position: fixed;
-}
-
 .footer {
   bottom: 0;
   position: fixed;
+  margin-left: 39rem;
 }
 
 .footerIcon {
