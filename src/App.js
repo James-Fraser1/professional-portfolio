@@ -1,20 +1,19 @@
-import Nav from './components/Footer';
-import Main from './components/Main';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import Projects from './pages/Projects';
+// import React, { useState } from 'react';
+import Header from './components/Header';
+// import Main from './components/Main';
+// import Footer from './components/Footer';
+// import Contact from './pages/Contact';
+// import About from './pages/About';
+// import Projects from './pages/Projects';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
-      <main>
-        <Main></Main>
-        <About></About>
-        <Contact></Contact>
-        <Projects></Projects>
-      </main>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   );
 }

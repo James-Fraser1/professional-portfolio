@@ -168,7 +168,7 @@ textarea {
 .container {
   width: 85%;
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
@@ -292,4 +292,20 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.header {
+  top: 0;
+  position: fixed;
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+}
+
+.footerIcon {
+  display: inline-block;
+  margin: 1rem;
+  padding: 2rem 2rem;
 }
