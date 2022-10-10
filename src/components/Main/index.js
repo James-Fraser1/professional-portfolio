@@ -3,7 +3,7 @@ import Contact from "../../pages/Contact"
 import Projects from "../../pages/Projects"
 
 export default function Main({page}){
-    function renderSection(){
+    function setSection(){
         if(page === 'projects'){
             return(<Projects/>)
         }else if(page ==='contact'){
@@ -13,6 +13,6 @@ export default function Main({page}){
         }
     }
     return(
-        <>{renderSection()}</>
+        setSection()
     )
 }
