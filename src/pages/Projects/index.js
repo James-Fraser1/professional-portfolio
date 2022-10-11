@@ -3,11 +3,11 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import old from '../../assets/icons/old.jpeg';
-import project2 from '../../assets/projects/project2.jpg';
-import project3 from '../../assets/projects/project3.jpeg';
-import project4 from '../../assets/projects/project4.jpeg';
+import Tilt from 'react-parallax-tilt';
+import passgen from '../../assets/projects/passgen.png';
+import ecommerce from '../../assets/projects/ecommerce.png';
+import socialapi from '../../assets/projects/socialapi.png';
+import teamprofilegen from '../../assets/projects/teamprofilegen.png';
 import leashleague from '../../assets/projects/leashleague.png';
 import rvahotspot from '../../assets/projects/rvahotspot.png';
 
@@ -16,28 +16,28 @@ function Projects() {
 
     const projectsArray = [
         {
-            projectImage: old,
-            projectLink: "www.google.com"
+            projectImage: passgen,
+            projectLink: "https://github.com/James-Fraser1/password-generator"
         },
         {
-            projectImage: project2,
-            projectLink: "www.bbcnews.com"
+            projectImage: ecommerce,
+            projectLink: "https://github.com/James-Fraser1/E-Commerce-BackEnd"
         },
         {
-            projectImage: project3,
-            projectLink: ""
+            projectImage: socialapi,
+            projectLink: "https://github.com/James-Fraser1/Social-Network-API"
         },
         {
-            projectImage: project4,
-            projectLink: ""
+            projectImage: teamprofilegen,
+            projectLink: "https://github.com/James-Fraser1/Team-Profile-Generator"
         },
         {
             projectImage: leashleague,
-            projectLink: ""
+            projectLink: "https://warm-plateau-73527.herokuapp.com/"
         },
         {
             projectImage: rvahotspot,
-            projectLink: ""
+            projectLink: "https://rockwoodc.github.io/RVA-Hotspot/"
         },
     ]
 
@@ -46,17 +46,13 @@ function Projects() {
             <Row>
                 {projectsArray.map((project) => (
                     <Col sm={2}>
-                        <a href={project.projectLink} className="projectCard"><Card className="bg-dark text-black ">
-                            <Card.Img src={project.projectImage} alt="Card image" />
-                            <Card.ImgOverlay>
-                                {/* <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text> */}
-                            </Card.ImgOverlay>
-                        </Card></a>
+                        <Tilt>
+                            <a href={project.projectLink} className="projectCard"><Card className="bg-dark text-black cardcss">
+                                <Card.Img src={project.projectImage} alt="Card image" />
+                                <Card.ImgOverlay>
+                                </Card.ImgOverlay>
+                            </Card></a>
+                        </Tilt>
                     </Col>
 
                 ))}

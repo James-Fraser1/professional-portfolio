@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import old from '../../assets/icons/old.jpeg';
+import ecommvid from '../../assets/projects/ecommvid.mp4';
+import ReactPlayer from 'react-player';
 
 function About() {
     return (
@@ -26,6 +28,16 @@ function About() {
                 <Col md={{ span: 4 }}>
                     {`Skills: React, CSS5, HTML3, JavaScript, SQL `}
                 </Col>
+                <div className='player-wrapper'>
+            <ReactPlayer
+            className='react-player fixed-bottom'
+            url= {ecommvid}
+            width='20%'
+            height='20%'
+            controls = {true}
+
+            />
+        </div>
             </Row>
         </Container>
     );
