@@ -1,15 +1,15 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import old from '../../assets/icons/old.jpeg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
+import old from '../../assets/icons/old.jpeg';
 import project2 from '../../assets/projects/project2.jpg';
 import project3 from '../../assets/projects/project3.jpeg';
-import project4 from '../../assets/projects/project4.png';
-
+import project4 from '../../assets/projects/project4.jpeg';
+import leashleague from '../../assets/projects/leashleague.png';
+import rvahotspot from '../../assets/projects/rvahotspot.png';
 
 
 function Projects() {
@@ -31,32 +31,37 @@ function Projects() {
             projectImage: project4,
             projectLink: ""
         },
+        {
+            projectImage: leashleague,
+            projectLink: ""
+        },
+        {
+            projectImage: rvahotspot,
+            projectLink: ""
+        },
     ]
 
     return (
         <Container fluid>
             <Row>
-                
-
-                    {projectsArray.map((project) => (
-                        <Col sm={2}>
-                    <a href={project.projectLink} className="projectCard"><Card className="bg-dark text-white ">
-                        <Card.Img src={project.projectImage} alt="Card image" />
-                        <Card.ImgOverlay>
-                            {/* <Card.Title>Card title</Card.Title>
+                {projectsArray.map((project) => (
+                    <Col sm={2}>
+                        <a href={project.projectLink} className="projectCard"><Card className="bg-dark text-black ">
+                            <Card.Img src={project.projectImage} alt="Card image" />
+                            <Card.ImgOverlay>
+                                {/* <Card.Title>Card title</Card.Title>
         <Card.Text>
           This is a wider card with supporting text below as a natural lead-in
           to additional content. This content is a little bit longer.
         </Card.Text>
         <Card.Text>Last updated 3 mins ago</Card.Text> */}
-                        </Card.ImgOverlay>
-                    </Card></a>
-            </Col>
-                    
-                    ))}
+                            </Card.ImgOverlay>
+                        </Card></a>
+                    </Col>
+
+                ))}
             </Row>
         </Container>
-
     );
 }
 
