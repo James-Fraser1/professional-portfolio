@@ -9,6 +9,7 @@ function Footer() {
                 <Nav.Link href="#linkedIn">
                     <SocialIcon className='footerIcon' url="https://www.linkedin.com/in/jamesfraservmi22" />
                     <SocialIcon className='footerIcon' url="https://github.com/James-Fraser1" />
+                    <SocialIcon className='footerIcon' url="https://stackoverflow.com/users/20216069/james" />
                 </Nav.Link>
             </footer>
         </>
