@@ -47,10 +47,18 @@
 
 .abouttxt {
   margin-top: 3rem;
+  color: white;
+  font-size:larger;
 }
 
 .skillstxt {
-  size: 4rem;
+  color: white;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+.skillsicon {
+  color: white;
+  font-size: 5rem;
 }
 
 .App {

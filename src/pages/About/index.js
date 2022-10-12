@@ -2,8 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import aboutme from '../../assets/icons/aboutme.jpg';
-import ecommvid from '../../assets/projects/ecommvid.mp4';
-import ReactPlayer from 'react-player';
+import { FaReact } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiMysql } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+// import ecommvid from '../../assets/projects/ecommvid.mp4';
+// import ReactPlayer from 'react-player';
 
 function About() {
     return (
@@ -25,20 +30,23 @@ function About() {
                     Over the course of my time at the Institute, balancing these three pillars helped me learn the meaning of sacrifice, determination, and effort.
                      </p>}
                 </Col>
-                <div className='player-wrapper'>
+                {/* <div className='player-wrapper'>
             <ReactPlayer
             className='react-player fixed-bottom'
             url= {ecommvid}
             width='20%'
-            height='20%'
+            height='40%'
             controls = {true}
 
             />
-        </div>
+        </div> */}
             </Row>
             <br/>
-            <Col md={{ span: 4, offset: 6 }}>
-                    {<p className='skillstxt'>Skills: React, CSS5, HTML3, JavaScript, SQL</p>}
+            <Col md={{ span: 6, offset: 7 }}>
+                    {<p className='skillstxt'>Skills</p>}
+                </Col>
+            <Col md={{ span: 6, offset: 6 }}>
+                    {<p className='skillsicon'><FaReact /> <FaNodeJs /> <SiMongodb /> <TbBrandJavascript /> <SiMysql /></p>}
                 </Col>
         </Container>
     );
