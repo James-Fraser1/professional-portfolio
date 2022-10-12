@@ -2,8 +2,7 @@
   background-image:
     url(./assets/icons/mainbackground.webp);
   background-size: auto;
-  height: 110rem;
-  color: white;
+  height: 130rem;
 }
 
 /* .me-auto {
@@ -46,10 +45,24 @@
   border-radius: 20px;
 }
 
-.abouttxt{
+.abouttxt {
   margin-top: 3rem;
 }
 
-.skillstxt{
+.skillstxt {
   size: 4rem;
+}
+
+.App {
+  text-align: center;
+  text-decoration: aliceblue;
+  max-width: 300px;
+  margin: 90px auto;
+}
+
+Form {
+  border: 10px groove rgb(38, 225, 5);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: aliceblue;
 }

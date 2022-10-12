@@ -45,7 +45,7 @@ function Projects() {
         <Container fluid>
             <Row>
                 {projectsArray.map((project) => (
-                    <Col md={{ span: 2, offset: 5 }}>
+                    <Col md={{ span: 3, offset: 2 }}>
                         <Tilt>
                             <a href={project.projectLink} className="projectCard"><Card className="bg-dark text-black cardcss">
                                 <Card.Img src={project.projectImage} alt="Card image" />
