@@ -12,7 +12,7 @@ function App() {
   const [section, setSection] = useState('contact');
 
   return (
-    <div>
+    <div className='background'>
       <Router>
       <Header/>
         <Routes>
@@ -22,11 +22,7 @@ function App() {
         </Routes>
         <Footer></Footer>
       </Router>
-      
-      {/* <Main page={section}/> */}
-
     </div>
-
   );
 }
 

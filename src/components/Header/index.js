@@ -1,4 +1,4 @@
-import navicon from '../../assets/icons/nav-icon.jpg';
+import logos from '../../assets/icons/logos.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -11,7 +11,7 @@ function Header({ setSection }) {
       <Navbar bg="black" variant="dark" className='header' expand='lg'>
         <Container>
         <Navbar.Brand href="#home">
-          <img src={navicon} alt='nav-icon' width={300} height={90}></img>
+          <img src={logos} alt='nav-icon' width={250} height={250}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

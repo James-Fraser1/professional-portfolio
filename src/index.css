@@ -1,3 +1,10 @@
+.background {
+  background-image:
+    url(./assets/icons/mainbackground.webp);
+  background-size: auto;
+  height: 110rem;
+  color: white;
+}
 
 /* .me-auto {
   display: flex;
@@ -8,10 +15,13 @@
 } */
 
 .footer {
+  width: 100%;
   bottom: 0;
   position: fixed;
-  margin: 0 auto;
-  width: auto;
+  height: 65px;
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
 }
 
 .footerIcon {
@@ -26,11 +36,20 @@
 }
 
 
-.projectCard{
+.projectCard {
   padding: 4px;
   box-shadow: 4px;
 }
 
-.headerIcon{
+.headerIcon {
   max-width: 300px;
+  border-radius: 20px;
+}
+
+.abouttxt{
+  margin-top: 3rem;
+}
+
+.skillstxt{
+  size: 4rem;
 }
