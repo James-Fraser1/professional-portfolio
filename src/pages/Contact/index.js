@@ -77,11 +77,11 @@ import Swal from 'sweetalert2';
 
 const SERVICE_ID = "service_61a0iyj";
 const TEMPLATE_ID = "template_r0aeust";
-const PUBLIC_KEY = "C2hCJrveiLpqCgIRY";
+const USER_ID = "C2hCJrveiLpqCgIRY";
 const App = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
         console.log(result.text);
         Swal.fire({
@@ -115,7 +115,7 @@ return (
           id='form-input-control-last-name'
           control={Input}
           label='Name'
-          name='user_name'
+          name='from_name'
           placeholder='Name…'
           required
           icon='user circle'
@@ -125,7 +125,7 @@ return (
           id='form-textarea-control-opinion'
           control={TextArea}
           label='Message'
-          name='user_message'
+          name='message'
           placeholder='Message…'
           required
         />

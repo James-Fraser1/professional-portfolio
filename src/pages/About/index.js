@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import aboutme from '../../assets/icons/aboutme.jpg';
 import { FaReact } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
+import { DiJavascript } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
@@ -46,7 +46,7 @@ function About() {
                     {<p className='skillstxt'>Skills</p>}
                 </Col>
             <Col md={{ span: 6, offset: 6 }}>
-                    {<p className='skillsicon'><FaReact /> <FaNodeJs /> <SiMongodb /> <TbBrandJavascript /> <SiMysql /></p>}
+                    {<p className='skillsicon'><FaReact style={{ color: '#61dbfb' }}/> <FaNodeJs style={{ color: '#68a063' }}/> <SiMongodb style={{ color: '#4DB33D' }}/> <DiJavascript  style={{ color: '#f0db4f' }}/> <SiMysql style={{ color: '#00758F' }}/></p>}
                 </Col>
         </Container>
     );
