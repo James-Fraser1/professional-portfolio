@@ -7,15 +7,10 @@ import { DiJavascript } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
-// import ecommvid from '../../assets/projects/ecommvid.mp4';
-// import ReactPlayer from 'react-player';
 
 function About() {
     return (
         <Container>
-            {/* <Row>
-                <Col md={4} className="headerText" ><h1>Hi, I'm James Fraser</h1></Col>
-            </Row> */}
             <Row>
                 <Col md={4}>
                     <img src={aboutme} alt="Icon" className="headerIcon"></img>
@@ -30,16 +25,6 @@ function About() {
                     Over the course of my time at the Institute, balancing these three pillars helped me learn the meaning of sacrifice, determination, and effort.
                      </p>}
                 </Col>
-                {/* <div className='player-wrapper'>
-            <ReactPlayer
-            className='react-player fixed-bottom'
-            url= {ecommvid}
-            width='20%'
-            height='40%'
-            controls = {true}
-
-            />
-        </div> */}
             </Row>
             <br/>
             <Col md={{ span: 6, offset: 7 }}>
